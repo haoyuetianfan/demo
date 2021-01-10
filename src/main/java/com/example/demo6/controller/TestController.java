@@ -15,10 +15,10 @@ public class TestController {
     public String test(){
         System.out.println("111");
         System.out.println("444");
-        System.out.println("22444222");
-        System.out.println("224443222");
-        System.out.println("23423");
-        System.out.println("2974923");
+        System.out.println("2");
+        System.out.println("2242443222");
+        System.out.println("2322423");
+        System.out.println("29742923");
         return "333";
 
 //        ConcurrentHashMap
