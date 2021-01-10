@@ -13,8 +13,8 @@ public class TestController {
 
     @RequestMapping("/hello")
     public String test(){
-        System.out.println("222222");
-        System.out.println("2223222");
+        System.out.println("111");
+        System.out.println("444");
         System.out.println("23423");
         return "333";
 
