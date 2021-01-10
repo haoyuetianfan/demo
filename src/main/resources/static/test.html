@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+111111111111111111111111111111111
+</body>
+<script  src="./js/jquery-3.3.1.js"></script>
+<!--<script type="text/javascript">-->
+<!--    //init method one-->
+<!--    $(document).ready(function(){-->
+<!--        trace("初始化方法进入");-->
+<!--    });-->
+<!--    function trace(obj){-->
+<!--        console.log(obj);-->
+<!--    }-->
+<!--</script>-->
+<script>
+    $(document).ready(function(){
+       // alert("初始化方法进入");
+        var param = {
+                "id":"123",
+                "state":"",
+                "acceptName":"11",
+            "remark":"世界&大同"
+            };
+        $.ajax({
+            headers: {
+                Accept: "application/json; charset=utf-8"
+            },
+            // contentType: "application/json",
+            url: "http://localhost:8080/user/test2",
+            type: "POST",
+            data: param,
+            dataType: "JSON",
+
+            success: function (msg) {
+                alert(msg);
+
+            }
+        });
+    });
+
+</script>
+</html>
